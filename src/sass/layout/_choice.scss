@@ -1,0 +1,123 @@
+.choice-section {
+  position: relative;
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 195px;
+
+    @media screen and (min-width: 1344px) {
+      margin-top: 195px;
+      z-index: 99;
+    }
+  }
+}
+
+.choice-section-title {
+  width: 50%;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: $title-secondary-color;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.31;
+    text-align: center;
+
+    @media screen and (min-width: 1344px) {
+      display: none;
+    }
+  }
+}
+
+.choice-list {
+  min-width: 280px;
+  margin: 0;
+  padding: 20px 14px 20px 30px;
+  background: $white-bg-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 55px 25px 75px;
+
+    @media screen and (min-width: 1344px) {
+      padding: 70px 55px;
+    }
+  }
+}
+
+.choice-item-link {
+  display: inline-flex;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.64;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.choice-item-link::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 1px;
+  margin-top: 8px;
+  margin-right: 9px;
+  background-color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 11px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    height: 2px;
+    margin-top: 15px;
+  }
+}
+
+.choice-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 35px) / 2);
+    margin: 15px 20px;
+
+    @media screen and (min-width: 1344px) {
+      width: calc((100% - 6 * 22px) / 3);
+    }
+  }
+}
+
+.choice-link-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}

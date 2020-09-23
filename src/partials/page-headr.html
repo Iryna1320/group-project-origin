@@ -1,0 +1,91 @@
+<header class="space-between">     
+    <div class="container flex">
+    <div class="center-position">
+        <a class="logo">Hell<svg width="22" height="25"><use href="./images/svg/symbol-defs.svg#icon-logo-fire"></use></svg>EN</a>
+        <p class="text-style"> <span class="hell-style">Адский</span> английский </p>
+    </div> 
+
+        <nav class="flex-for-nav" id="menu">
+            <ul class="list navigation" >
+                <li class="guide"><a href="#program" class="quide-link">Программы обучения</a></li>
+                <li class="guide"><a href="#teacher-sec" class="quide-link">О нас</a></li>
+                <li class="guide"><a href="#methods" class="quide-link">Варианты обучения</a></li>
+                <li class="guide"><a href="#contacts" class="quide-link">Контакты</a></li>
+            </ul>
+            <a href="#form" class="button-main" >Консультация по телефону</a>
+            <button type="button" class="menu-button locate" aria-expanded="false" data-modal-open>
+                <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./images/svg/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button> 
+        </nav>
+    </div>
+</header>
+<!-- Блок герой -->
+<section class="wave">
+<div class="container-hero ">
+    <div class="position-inscr">
+        <h1 class="inscription-style"> Комплексная <br> подготовка к ВНО <br> по английскому языку </h1>
+        <p class="warnt">Просто не будет</p>
+        <p class="quarantee">Но ты гарантировано наберешь <span class="hell-style"></br>+25 баллов</span></p>
+        <a class="desire-for-lesson" id="btn" href="#form">хочу на бесплатное занятие</a>
+    </div>
+    <picture>
+         <source srcset=".\images\photo-hero\hero-desk\head-photo-desk-min.png 1x, \images\photo-hero\hero-desk\head-photo-desk@2x-min.png 2x" media="(min-width: 1344px)">
+        <source srcset=".\images\photo-hero\hero-tab\head-photo-tab-min.png  1x, \images\photo-hero\hero-tab\head-photo-tab@2x-min.png 2x" media="(min-width: 768px)">
+        <source srcset=".\images\photo-hero\hero-mob\head-photo-mob-min.png  1x, \images\photo-hero\hero-mob\head-photo-mob@2x-min.png 
+        2x" media="(max-width: 767px)"> 
+         <img src=".\images\photo-hero\hero-desk\head-photo-desk-min.png" alt="" width="676">   
+    </picture>
+</div>
+<!-- Секция со списком  -->
+  <div class="container-methods">
+    <ul class="list method">
+        <li class="methods-item">
+            <svg class="teacher-border" width="180" height="102">
+                <use href="./images/svg/symbol-defs.svg#icon-teacher-border"></use>
+            </svg> 
+            <p class="promise">Адаптированная авторская программа ВНО</p>
+        </li>
+        <li class="methods-item">
+            <svg class="smartphone-border"  width="140" height="102">
+                <use href="./images/svg/symbol-defs.svg#icon-smartphone-border"></use>
+            </svg> 
+            <p class="promise"> Современные <br>методики обучения </p>
+        </li>
+        <li class="methods-item">
+            <svg class="dollar-border" width="140" height="102">
+                <use href="./images/svg/symbol-defs.svg#icon-dollar-border"></use>
+            </svg>
+            <p class="promise"> Финансовая гарантия результата</p> 
+        </li>
+    </ul>
+</div>
+ 
+
+ <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+     <button class="btn-apperance" data-modal-close>
+         <svg class="btn-close" >
+            <use class="icon-cross" href="./images/svg/symbol-defs.svg#icon-close"></use>
+         </svg>
+     </button> 
+     
+     
+     <div class="menu-position">
+        <div class="">
+            <p class="name-style">Hell<svg width="22" height="25"><use href="./images/svg/symbol-defs.svg#icon-logo-fire"></use></svg>EN</p>
+            <p class="english"> <span class="Hell-eng">Адский</span> английский </p>
+        </div> 
+    
+            <nav id="menuh" class="menu-transform">
+            <ul class="list gup">
+                <li class="manual"><a href="#program" class="manual-link" link1-modal-close >Программы обучения</a></li>
+                <li class="manual"><a href="#teacher-sec" class="manual-link" link2-modal-close><span class="about-us">О нас</span></a></li>
+                <li class="manual"><a href="#methods" class="manual-link" link3-modal-close>Варианты обучения</a></li>
+                <li class="manual"><a href="#contacts" class="manual-link" link4-modal-close>Контакты</a></li>
+            </ul>
+    </div>
+    <button class="btn-from-menu" id="btn-mob" href="#form"link5-modal-close>Консультация по телефону</button>
+</div>
+</section>

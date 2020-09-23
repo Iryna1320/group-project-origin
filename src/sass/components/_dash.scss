@@ -1,0 +1,9 @@
+.dash:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $accent-color;
+   
+}

@@ -1,0 +1,253 @@
+.inscription-style{
+font-weight: 800;
+line-height: 130%;
+margin-bottom: 30px;
+letter-spacing: 0.03em;
+
+color: $title-text-color;
+
+@include for-size(tablet-portrait) {      
+        font-weight: 800;
+        line-height: 130%;
+        margin-bottom: 30px;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+
+        color: $title-text-color;
+    }
+
+     @include for-size(tablet-landscape) {      
+        font-weight: 800;
+        line-height: 130%;
+        margin-bottom: 30px;
+        letter-spacing: 0.03em;
+        color: #111518;
+        padding: 10;
+        width: 320px;
+        font-size: 26px;
+        
+        color: $title-text-color;
+   }
+   
+      @include for-size(desktop) {      
+      width: 100%;
+      font-size: 58px;
+   }
+}
+.space-between{
+margin-top: 35px;
+margin-bottom: 45px;
+}
+.warnt{
+font-weight: 500;
+line-height: 164.9%;
+
+letter-spacing: 0.08em;
+color: $primary-text-color;
+
+@media screen and (max-width: 1343px){
+   font-size: 14px; 
+}
+
+@media screen and (min-width: 1344px){
+   font-size: 20px; 
+}
+}
+.quarantee{
+font-weight: bold;
+margin-bottom: 40px;
+line-height: 164.9%;
+
+letter-spacing: 0.08em;
+
+color: $title-text-color;
+@media screen and (max-width: 1343px){
+   font-size: 14px; 
+}
+
+@media screen and (min-width: 1344px){
+   font-size: 20px; 
+}
+}
+
+
+.promise{
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 164.9%;
+letter-spacing: 0.08em;
+margin-right: 30px;
+margin-left: 10px;
+width: 200px;
+
+color: $title-text-color;
+
+ @include for-size(tablet-portrait) {      
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 200px;
+  }
+
+     @include for-size(tablet-landscape) {      
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 146px;
+    }
+   
+       @include for-size(desktop) {      
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 164.9%;
+        letter-spacing: 0.08em;
+        margin-left: 10px;
+        width: 333px;
+        transform: translateX(-5%);
+        letter-spacing: 1px;
+    }
+}
+.promise-uptudate{
+font-style: normal;
+font-weight: bold;
+width: 250px;
+font-size: 20px;
+line-height: 164.9%;
+letter-spacing: 0.08em;
+
+transform: translateX(-13%);
+color:$title-text-color; 
+}
+
+.method{
+
+ @include for-size(tablet-portrait) {      
+    display: flex;
+    flex-direction: column;
+ }
+
+     @include for-size(tablet-landscape) {      
+     display: flex;
+     flex-flow: row;
+     padding-right: 40px;
+   }
+   
+   //    @include for-size(desktop) {      
+   //    width: 1344px;
+   //    padding-left: 15px;
+   //    padding-right: 15px;
+   // }
+ }
+.methods-item{
+display: flex;
+align-items: center;
+
+margin-bottom: 30px;
+
+}
+.container-hero{
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+@include for-size(tablet-portrait) {  
+    width: 320px;    
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+     @include for-size(tablet-landscape) {      
+     width: 768px;
+     display: flex;
+     padding-left: 40px;
+     padding-right: 40px;
+   }
+   
+      @include for-size(desktop) {      
+        width: 1344px;
+        display: flex;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+}
+.container-methods{
+margin-top: 100px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: auto;
+margin-right: auto;
+
+ @include for-size(tablet-portrait) {      
+    width: 320px;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+     @include for-size(tablet-landscape) {      
+     width: 768px;
+     padding-left: 40px;
+     padding-right: 40px;
+    }
+   
+      @include for-size(desktop) {      
+        width: 1344px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+}
+
+
+.teacher-border{
+    width: 100px;
+    height: 60px;
+}
+.smartphone-border{
+    width: 100px;
+    height: 60px;
+
+    @include for-size(desktop) {      
+       height: 102px;
+     }
+}
+.dollar-border{
+    width: 100px;
+    height: 60px;
+
+    @include for-size(desktop) {      
+        height: 102px;
+      }
+}
+.container-hero img{
+    width: 370px;
+
+    @include for-size(desktop) {      
+    min-width: 700px;
+     }
+}
+svg.teacher-border{
+    width: 100px;
+    @include for-size(tablet-landscape) {      
+        width: 90px;
+      }
+      @include for-size(desktop) {      
+        height: 102px;
+        width: 100px;
+     }
+}
